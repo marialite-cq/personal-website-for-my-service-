@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F8F8F8; /* Light Gray */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #0A1128; /* Navy Blue */
+}
+
+a {
+    text-decoration: none;
+    color: #0A1128;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #0A1128; /* Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-section .subheadline {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #E0E0E0; /* Light Gray */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6B6B; /* Rose Pink */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E65A5A;
+}
+
+/* What I Offer Section */
+.what-i-offer-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.what-i-offer-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.offer-item {
+    background-color: #F8F8F8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+}
+
+.offer-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0A1128;
+}
+
+.offer-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.micro-cta {
+    font-size: 1.1em;
+    color: #FF6B6B;
+    font-weight: 600;
+    border-bottom: 2px solid #FF6B6B;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.micro-cta:hover {
+    color: #E65A5A;
+    border-color: #E65A5A;
+}
+
+/* Proof & Trust Section */
+.proof-trust-section {
+    background-color: #E0E0E0; /* Light Gray */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.proof-trust-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #0A1128;
+}
+
+.proof-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.proof-images img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.proof-images img:hover {
+    transform: scale(1.03);
+}
+
+.proof-trust-section .tagline {
+    font-size: 1.3em;
+    color: #555;
+    font-style: italic;
+}
+
+/* Offer Urgency Section */
+.offer-urgency-section {
+    background-color: #0A1128; /* Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.offer-urgency-section .offer-text {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    color: #E0E0E0;
+}
+
+/* About Me Section */
+.about-me-section {
+    background-color: #fff;
+    padding: 80px 20px;
+}
+
+.about-me-section .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-me-content .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FF6B6B; /* Rose Pink border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-me-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0A1128;
+}
+
+.about-me-text p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark Gray */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #FF6B6B; /* Rose Pink */
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section .subheadline {
+        font-size: 1.2em;
+    }
+
+    .offer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proof-images img {
+        max-width: 80%;
+    }
+
+    .about-me-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-content .profile-pic {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .proof-images img {
+        max-width: 100%;
+    }
+}
+
+
